@@ -32,9 +32,7 @@
   font-size: 1rem;
   padding: 18px 35px;
 }
-main > section {
-  margin-top: 100px;
-}
+
 /* Nav styles */
 #menu {
   display: none;
@@ -123,6 +121,65 @@ p.banner-description {
   border-top: 0.5px solid #ededed;
   border-bottom: 0.5px solid #ededed;
 }
+/* product-collection */
+
+.product-collection {
+  max-width: 1047px;
+  margin: 100px auto 0 auto;
+}
+h2.section-title {
+  text-align: center;
+  padding: 0 34px 30px 33px;
+  font-size: 1.75rem;
+  font-weight: 600;
+}
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+.card-content {
+  width: 329px;
+  height: 476px;
+  padding: 17px 15px 203px 14px;
+  border-radius: 8px;
+  box-shadow: 0 4px 30px 0 rgba(0, 0, 0, 0.06);
+  margin-bottom: 30px;
+}
+h4.card-title {
+  font-size: 1.75rem;
+  font-weight: 400;
+  padding: 16px 41px 6px 0;
+  color: rgba(24, 25, 31, 1);
+}
+span.money {
+  font-size: 1.2rem;
+  padding-right: 233px;
+  color: rgba(0, 0, 0, 0.87);
+}
+img.star {
+  width: 12px;
+  height: 12px;
+}
+span.rating-point {
+  font-size: 13px;
+  color: rgba(94, 99, 102, 1);
+}
+p.card-info {
+  font-size: 12px;
+  font-weight: 700;
+  color: rgba(120, 120, 133, 1);
+  width: 196px;
+  padding-bottom: 17px;
+}
+.see-more span {
+  color: #e02c6d;
+  font-size: 1rem;
+}
+.see-more i {
+  color: #e02c6d;
+}
 @media screen and (max-width: 576px) {
   nav {
     margin: 35px 16px 0 16px;
@@ -209,5 +266,10 @@ p.banner-description {
     margin-top: 50px;
     /* padding: 0 42px; */
     border: none;
+  }
+  /* product collection */
+  .card-container {
+    grid-template-columns: 1fr;
+    place-items: center;
   }
 }
