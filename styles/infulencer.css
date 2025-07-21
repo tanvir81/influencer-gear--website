@@ -1,6 +1,11 @@
 /* Google Font Pooping */
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 .poppins {
   font-family: "Poppins", sans-serif;
 }
@@ -26,6 +31,9 @@
   padding: 18px 35px;
 }
 /* Nav styles */
+#menu {
+  display: none;
+}
 nav {
   display: flex;
   align-items: center;
@@ -59,11 +67,11 @@ ul li:nth-last-child(-n + 2) a {
   color: #000000;
 }
 
-.header {
+/* .header {
   background-image: url("../images/Circle\ design.svg");
   background-repeat: no-repeat;
-  background-position: calc(100% - 118px) 189px;
-}
+  background-position: calc(100% - 118px) 99px;
+} */
 
 .banner {
   display: flex;
@@ -82,4 +90,47 @@ h1.banner-title {
 p.banner-description {
   font-size: 1rem;
   font-weight: 500;
+}
+.banner-pic {
+  position: absolute;
+  top: 172px;
+  left: 1330px;
+  right: -50px;
+  z-index: 1;
+}
+.banner-pic-bg {
+  position: relative;
+}
+/* .banner img {
+  width: 100%;
+} */
+
+@media screen and (max-width: 576px) {
+  nav ul li {
+    display: none;
+  }
+
+  nav ul li:last-child {
+    display: block;
+  }
+  #menu {
+    display: flex;
+  }
+  .banner-content {
+    order: 2;
+  }
+
+  .banner-pic {
+    order: 1;
+  }
+  .banner-pic {
+    position: absolute;
+    top: 172px;
+    left: 1330px;
+    right: -50px;
+    z-index: 1;
+  }
+  .banner-pic-bg {
+    position: relative;
+  }
 }
