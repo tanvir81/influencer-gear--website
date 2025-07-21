@@ -32,6 +32,9 @@
   font-size: 1rem;
   padding: 18px 35px;
 }
+main > section {
+  margin-top: 100px;
+}
 /* Nav styles */
 #menu {
   display: none;
@@ -82,7 +85,7 @@ i.cart-bs.fa-solid.fa-cart-shopping {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin: 120px 120px;
+  margin: 120px 120px 69px;
 }
 .banner-content {
   width: 582px;
@@ -107,7 +110,19 @@ p.banner-description {
 .circle {
   position: relative;
 }
-
+/* Sponcer section */
+.sponcer {
+  max-width: 1110px;
+  margin: 0 auto;
+}
+.sponcor-companies {
+  display: flex;
+  justify-content: center;
+  gap: 61px;
+  padding: 36px 61px 34px 61px;
+  border-top: 0.5px solid #ededed;
+  border-bottom: 0.5px solid #ededed;
+}
 @media screen and (max-width: 576px) {
   nav {
     margin: 35px 16px 0 16px;
@@ -184,5 +199,15 @@ p.banner-description {
   .circle {
     position: relative;
     width: 257px;
+  }
+  /* sponcer */
+  .sponcor-companies {
+    justify-content: center;
+    gap: 34px;
+    width: 558px;
+    flex-wrap: wrap;
+    margin-top: 50px;
+    /* padding: 0 42px; */
+    border: none;
   }
 }
