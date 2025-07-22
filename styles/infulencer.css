@@ -134,6 +134,7 @@ h2.section-title {
   font-weight: 600;
 }
 .card-container {
+  max-width: 1047px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 30px;
@@ -179,6 +180,55 @@ p.card-info {
 }
 .see-more i {
   color: #e02c6d;
+}
+/* code for see-more */
+.see-more {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 8px;
+  margin-right: 5px;
+}
+/* Join now section */
+.join-now {
+  max-width: 1110px;
+  margin: 100px auto 0 auto;
+}
+section.join-now {
+  display: flex;
+  /* justify-content: space-between; */
+  gap: 96px;
+  /* padding: 23px 0 23px; */
+}
+.join-content {
+  padding: 23px 0 23px;
+}
+.join-content {
+  padding: 23px 0 23px;
+  width: 498px;
+  height: 210px;
+}
+h3.join-title {
+  font-size: 2rem;
+  width: 621px;
+}
+p.join-des {
+  font-size: 1rem;
+  color: rgba(108, 108, 108, 1);
+  margin-top: 16px;
+}
+.btn-feature {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  background-color: #e02c6d;
+  border: none;
+  font-weight: bold;
+  color: white;
+  font-size: 0.75rem;
+  padding: 8px 16px;
+  margin-top: 16px;
 }
 @media screen and (max-width: 576px) {
   nav {
@@ -271,5 +321,9 @@ p.card-info {
   .card-container {
     grid-template-columns: 1fr;
     place-items: center;
+  }
+
+  .see-more {
+    margin-right: 118px;
   }
 }
